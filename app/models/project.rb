@@ -5,6 +5,6 @@ class Project
         @tasks = []
     end
     def done? 
-      tasks.empty?
+      tasks.all?(&:complete?)
     end
 end
